@@ -2,26 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.parentcontiner {
+    width: 100px;
+    height: 100vh;
+    overflow: auto;
+    background-color: darkblue;
+    display:flex;
+    padding: 50px;
+    }
+    
+.childcontainer {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(235, 242, 243);
+    border-radius: 30px;
+    box-shadow: rgba (0,0,0,0.1) 8px 40px 12px;
+    padding: 15px;
+    margin: 40px;
+    transition-duration: 0.5s;
+    border: 5px solid white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+.childcontainer:hover {
+    border: 3px solid rgb(59, 46, 175);
+    box-shadow: rgba (0,0,0,0.25) 0px 54px 55px,
+    rgba (0,0,0,0.12) 0px -12px 30px, rgba (0,0,0,0.12) 0px 4px 6px, rgba (0,0,0,0.17) 0px 12px 13px, rgba (0,0,0,0.09) 0px -3px 5px;
+    }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.imagecontainer {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(153, 108, 153);
+    border-radius: 10px;
+    box-shadow: rgba(99 , 99, 99, 0.2) 0px 2px 8px 0px;
+   
+    
 }
+.tittle {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+}
+.description {
+    font-size: 14px;
+    font-weight: 50px;
+}
+.readmore {
+    width: 100px;
+    margin-top: 40px;
+    background-color: white;
+    border: 3px solid rgb(15, 15, 15);
+    transition-duration: 1.5s;
+    font-size: 15px;
+    color: rgb(3, 3, 3);
+    border-radius: 10px;
+    padding: 10px;
+}
+.readmore:hover {
+    border:3px solid voilet;
+    color: rgb(154, 123, 184);
+}
+@media only screen and (max-width: 500px) {
+    .childcontainer {
+        width: 60%;
+    }
+}
+@media only screen and (max-width :450px) {
+    .childcontainer{
+        width: 90%;
+    }
+}
+@keyframes GolaGanda {
+    0%{
+        border: 3px solid white;
+    }
+    20%{
+        border: 3px solid blue;
+    }
+    40%{
+        border: 3px solid red;
+        background-color: aqua;
+    }
+    60% {
+        border: 3px solid rgb(98 ,98, 243);
+    }
+    80% {
+        border: 1px solid green;
+    }
+    100% {
+        border: 3px solid white;
+    }
+}
+.p-4 {
+font-size: 20PX;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 20PX;
+justify-content: center;
+align-items: center;
+}
+.header {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    gap: 20px;
+    font-size:30px;
+    background-color: aqua;
+    color: blue;
+}
+.Heading {
+    font: bold;
+    font-size: 40px;
+    color: rgb(19, 2, 36);
 }
