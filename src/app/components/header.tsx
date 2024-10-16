@@ -12,7 +12,7 @@ export default function Header() {
             <Link href="/responsive">Blogs</Link>
           </li>
           <li>
-            <Link href="/responsive-2">About Us</Link>
+            <Link href="/responsive-2">Some Other Blogs</Link>
           </li>
         </ul>
       </nav>

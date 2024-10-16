@@ -2,25 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.parentcontiner {
-    width: 100px;
-    height: 100vh;
-    overflow: auto;
-    background-color: darkblue;
+.parentcontainer { 
+    min-height: 500px;
+    overflow: scroll;
+    flex-wrap: wrap;
+    background-color: rgb(227, 227, 233);
     display:flex;
-    padding: 50px;
+    padding: 20px;
     }
     
 .childcontainer {
-    width: 250px;
+    width: 300px;
     height: 250px;
     background-color: rgb(235, 242, 243);
-    border-radius: 30px;
+    border-radius: 50px;
     box-shadow: rgba (0,0,0,0.1) 8px 40px 12px;
-    padding: 15px;
-    margin: 40px;
+    padding: 20px;
+    margin: 30px;
     transition-duration: 0.5s;
-    border: 5px solid white;
+    border: 5px solid rgb(202, 193, 193);
+    margin-left: 80px;
 }
 
 .childcontainer:hover {
@@ -30,18 +31,16 @@
     }
 
 .imagecontainer {
-    height: 150px;
-    width: 100%;
-    background-color: rgb(153, 108, 153);
-    border-radius: 10px;
-    box-shadow: rgba(99 , 99, 99, 0.2) 0px 2px 8px 0px;
-   
-    
-}
+     background-color: rgb(145, 158, 233);
+    border-radius: 20px;
+    box-shadow: rgba(87, 69, 69, 0.2) 0px 2px 8px 0px; 
+     }
+
 .tittle {
     font-size: 20px;
     margin-bottom: 5px;
     margin-top: 20px;
+    font-weight: bold;
 
 }
 .description {
@@ -100,6 +99,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 padding: 20PX;
 justify-content: center;
 align-items: center;
+padding-left: 50px;
 }
 .header {
     justify-content: center;
@@ -114,6 +114,7 @@ align-items: center;
 }
 .Heading {
     font: bold;
-    font-size: 40px;
-    color: rgb(19, 2, 36);
+    font-size: 100px;
+    color: rgb(111, 14, 207);
+    padding-left: 50px;
 }
